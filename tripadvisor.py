@@ -36,7 +36,7 @@ def extract_review(html):
     else:
         star = 1.0
     print(f"title : {title}")
-    print(f"text : {text}")
+    print(f"review : {text}")
     print(f"star : {star}")
     return {"title": title, "text": text, "star": star}
 
