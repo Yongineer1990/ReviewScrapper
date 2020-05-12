@@ -42,7 +42,6 @@ def extract_review(html):
 
 
 def extract_reviews(last_page):
-    increase_page = 5
     reviews = []
     for i in range(last_page):
         print(f"Scrapping review on Tripadvisor {i+1}")
@@ -61,7 +60,7 @@ def extract_reviews(last_page):
         for result in reviewContainer:
             review = extract_review(result)
             reviews.append(review)
-    return reviewContainer
+    return reviews
 
 
 def get_reviews():

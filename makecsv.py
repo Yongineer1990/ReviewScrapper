@@ -6,5 +6,5 @@ def save_to_csv(reviews):
     writter = csv.writer(file)
     writter.writerow(["Title", "Detail", "Rating"])
     for review in reviews:
-        writter.writerow(list(review.value()))
+        writter.writerow(list(review.values()))
     return
